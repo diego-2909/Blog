@@ -53,7 +53,7 @@ catch (Exception $e)
                     <div class="left_article">
                         <a href="article.php?id= <?php echo $recipe['id']?>" class="nom"><?php echo $recipe['name']; ?></a>
                         <p class="date"><?php echo $recipe['date']; ?><p>
-                        <p class="contenu" ><?php echo $recipe['contenu']; ?><p>
+                        <p class="contenu" ><?php echo htmlspecialchars_decode($recipe['contenu']); ?><p>
                     </div>
                     
                 </div>

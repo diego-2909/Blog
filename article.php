@@ -55,7 +55,7 @@ else
 
                 <h1 class="name-article"> <?php echo $recipes[$num]['name'] ?> </h1>
 
-                <p class="contenu-article" ><?php echo $recipes[$num]['contenu']; ?><p>
+                <p class="contenu-article" ><?php echo htmlspecialchars_decode($recipes[$num]['contenu']); ?><p>
 
             </div>
 
